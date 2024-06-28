@@ -9,19 +9,23 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
     ],
-
     sidebar: [
       {
-        text: 'Examples',
+        text: '部署',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: '本项目开发及部署过程', link: '/部署过程/本项目开发及部署过程' },
         ]
-      }
-    ],
+      },
+      {
+        text: '示例',
+        items: [
+          { text: 'Runtime API Examples', link: '/api-examples' },
+          { text: 'Markdown Examples', link: '/markdown-examples' },
+        ]
+      },
 
+    ],
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
     ]
