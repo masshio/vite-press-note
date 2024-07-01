@@ -8,11 +8,11 @@ hero:
   tagline: My great project tagline
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: 查看文档
+      link: /note/本项目开发及部署过程
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: 文档示例
+      link: /examples/markdown-examples
 
 features:
   - title: Feature A

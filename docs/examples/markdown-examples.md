@@ -2,6 +2,14 @@
 
 This page demonstrates some of the built-in markdown extensions provided by VitePress.
 
+## Link
+```md
+[内部链接](/examples/markdown-examples)
+[内部链接](/examples/markdown-examples.md)
+[内部链接](/examples/markdown-examples.html)
+[内部链接](/examples/markdown-examples.html#syntax-highlighting)
+```
+
 ## Syntax Highlighting
 
 VitePress provides Syntax Highlighting powered by [Shiki](https://github.com/shikijs/shiki), with additional features like line-highlighting:
