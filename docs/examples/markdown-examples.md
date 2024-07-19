@@ -1,14 +1,35 @@
 # Markdown Extension Examples
 
-This page demonstrates some of the built-in markdown extensions provided by VitePress.
+This page demonstrates some of the built-in markdown extensions provided by [VitePress](https://vitepress.dev/zh/guide/markdown).
 
-## Link
+## 内部链接跳转
+
+**Good**:smiling_face_with_three_hearts:
+
 ```md
+<!-- 推荐 -->
 [内部链接](/examples/markdown-examples)
+[内部链接](/examples/markdown-examples#syntax-highlighting)
+```
+
+**Bad**:sweat_smile:
+```md
+<!-- 可以但不推荐 -->
 [内部链接](/examples/markdown-examples.md)
 [内部链接](/examples/markdown-examples.html)
-[内部链接](/examples/markdown-examples.html#syntax-highlighting)
 ```
+
+## Emoji :partying_face:
+
+**输入**
+```md
+:partying_face:
+```
+
+**输出**
+:partying_face: :rofl:
+
+[支持的emoji列表](https://github.com/markdown-it/markdown-it-emoji/blob/master/lib/data/full.mjs)
 
 ## Syntax Highlighting
 
