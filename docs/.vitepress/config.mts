@@ -31,6 +31,19 @@ export default defineConfig({
             { text: '本项目开发及部署过程', link: '/note/本项目开发及部署过程' },
           ]
         },
+        {
+          text: 'leetcode',
+          items: [
+            { text: 'leetcode题解100-150', link: '/note/leetcode题解100-150' },
+            { text: 'leetcode题解300-350', link: '/note/leetcode题解300-350' },
+          ]
+        },
+        {
+          text: 'koa2',
+          items: [
+            { text: 'koa2源码解析', link: '/note/koa2源码解析' },
+          ]
+        },
       ]
     },
     socialLinks: [
