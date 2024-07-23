@@ -1,3 +1,38 @@
+### 128.最长连续序列
+
+给定一个未排序的整数数组 nums ，找出数字连续的最长序列（不要求序列元素在原数组中连续）的长度。
+
+请你设计并实现时间复杂度为 O(n) 的算法解决此问题。
+
+题解
+```js
+var longestConsecutive = function(nums) {
+  if(!nums.length) return 0;
+  const map = new Map()
+  // 每个整数设为1
+  nums.forEach(item => {
+    map.set(item, 1)
+  })
+  // 如果存在比自己小1的数字，说明不是起点，设为0
+  nums.forEach(item => {
+    if(map.has(item - 1)) {
+      map.set(item, 0)
+    }
+  })
+  let maxLength = 1
+  nums.forEach(item => {
+    if(map.get(item) == 1) {
+      let add = 1
+      while(map.has(item + add)) {
+        add += 1
+      }
+      maxLength = Math.max(maxLength, add)
+    }
+  })
+  return maxLength
+};
+```
+
 ### 130.被围绕的区域
 ![](../images/leetcode/130q.png)
 
@@ -97,6 +132,7 @@ var solve = function(board) {
 的下一个起点则是从 4 开始
 
 **为什么是4？**
+
 我们在抵达下一个加油站时剩余的油肯定是大于等于 0 的，拿上例来说我们到达加油站 1 时的油为 `gas[0] - cost[0] + gas[1]`，而 `gas[0] - cost[0] >= 0`，当我们以加油站 1 为起点时油量则为 `gas[1]`，如果以 0 为起点时都无法绕行一周的话，那么以 1 为起点则更不可能，所以在选择下一个可能的起点是不会在上一个起点可通过的范围内的。
 
 题解：
